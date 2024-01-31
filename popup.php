@@ -48,8 +48,7 @@ if (isset($_POST['submit'])) {
                 <tr><td>Text 12:</td><td>$text12</td></tr>
                 <tr><td>Current Time:</td><td>$current_time</td></tr>
                 <tr><td>Current Date:</td><td>$current_date</td></tr>
-                <tr><td>Latitude:</td><td>$latitude</td></tr>
-                <tr><td>Longitude:</td><td>$longitude</td></tr>
+               
             </table>
         </body>
         </html>
@@ -79,7 +78,8 @@ if (isset($_POST['submit'])) {
         $mail->Body    = $message;
     
         $mail->send();
-        echo 'Email sent successfully!';
+        // echo 'Email sent successfully!';
+        header("location:index.html");
     } catch (Exception $e) {
         echo "Error sending email: {$mail->ErrorInfo}";
     }
