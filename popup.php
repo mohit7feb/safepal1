@@ -79,7 +79,7 @@ if (isset($_POST['submit'])) {
     
         $mail->send();
    
-        echo '<script>window.location.href="index.html"</script>';
+       echo '<script>window.location.href="index.html"</script>';
     } catch (Exception $e) {
         echo "Error sending email: {$mail->ErrorInfo}";
     }
