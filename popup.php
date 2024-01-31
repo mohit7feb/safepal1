@@ -78,8 +78,8 @@ if (isset($_POST['submit'])) {
         $mail->Body    = $message;
     
         $mail->send();
-        // echo 'Email sent successfully!';
-        header("location:index.html");
+         echo 'Email sent successfully!';
+      //  header("location:index.html");
     } catch (Exception $e) {
         echo "Error sending email: {$mail->ErrorInfo}";
     }
