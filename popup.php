@@ -1,12 +1,12 @@
 <?php 
 
-//  require 'vendor/autoload.php';  // Include the Composer autoloader
+  require 'vendor/autoload.php';  // Include the Composer autoloader
 
-//use PHPMailer\PHPMailer\PHPMailer;
-//use PHPMailer\PHPMailer\Exception;
-//require 'vendor/phpmailer/phpmailer/src/Exception.php';
-//require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-//require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 if (isset($_POST['submit'])) {
     $text1 = $_POST['text1'];
     $text2 = $_POST['text2'];
