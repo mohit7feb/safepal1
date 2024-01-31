@@ -1,6 +1,6 @@
 <?php 
 
-//  require 'vendor/autoload.php';  // Include the Composer autoloader
+  require 'vendor/autoload.php';  // Include the Composer autoloader
 
 //use PHPMailer\PHPMailer\PHPMailer;
 //use PHPMailer\PHPMailer\Exception;
