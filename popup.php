@@ -1,14 +1,4 @@
-<?php
-
-$conn=mysqli_connect('localhost','root','','safepal');
-if(!$conn){
-            echo "Connection failed";
-        }
-
-        
-?>
-
- <?php 
+<?php 
 
   require 'vendor/autoload.php';  // Include the Composer autoloader
 
